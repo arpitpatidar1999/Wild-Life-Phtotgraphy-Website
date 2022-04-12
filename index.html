@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-TJLC9RD"></script>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-192694784-1"></script>
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-192694784-1');
+</script> -->
+
+</head>
+<body>
+
+<div class="background">
+
+<div class="nav">
+    <a class="a" active href="#">HOME</a>
+    <a class="b" href="#">ABOUT WILDLIFE PHOTOGRAPHY</a>
+    <a class="c" href="#">PICTURES SECTION</a>
+    <a class="d" href="#">CONTACT</a>
+</div>
+
+<div class="content">
+
+	<div class="home">
+		<h1>Wildlife photography</h1>
+		<h3>Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat.</h3>
+	</div>
+
+	<div class="aboutus">
+		<p><b>Wildlife Photography</b>,<br>
+			<br>
+		Welcome to <b>Wildlife Photography page </b>.<br>
+                                                              <br>
+		Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat.<br>
+
+                                                              <br>
+															  As well as requiring photography skills, wildlife photographers may need field craft skills. For example, some animals and birds are difficult to approach and thus a knowledge of the animal's and birds behavior is needed in order to be able to predict its actions. Photographing some species may require stalking skills or the use of a hide/blind for concealment.<br>
+         <br>
+
+		 While wildlife photographs can be taken using basic equipment, successful photography of some types of wildlife requires specialist equipment, such as macro lenses for insects, long focal length lenses for birds and underwater cameras for marine life. However, a great wildlife photograph can involve a understanding of animal behavior.</p>
+	</div>
+
+    <div class = "gallary">
+		<h1>Hello I am GALLARY</h1>
+		<div class="image">
+			<img src="images/abd1.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd2.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd3.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd4.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd5.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd6.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd7.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd8.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd9.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd10.jpg"/>
+		</div>
+
+	</div>
+
+	<div class="contactus">
+		<div class="contactform">
+			<form action="index.html"method="post">
+             <input type="text" name=""  class="inputtext"  value="First name">
+             <input type="text" name=""  class="inputtext" value ="Last name">
+              <input type="text" name=""  class="inputtext"  value ="Your Email">
+              <textares cols="4" rows="6" class="inputmessage" >Your Messages...!!!
+              </textares>
+              <input type="button" name="" class="submitbutton" value="Submit">
+				
+			</form>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('a').click(function(){
+            //alert("i am click");
+            var selected= $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+		});
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus'),
+        $gallary = $('.gallary'),
+        $contactus= $('.contactus');
+
+        $a.click(function(){
+        	$home.fadeIn();
+        	$aboutus.fadeOut();
+        	$gallary.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $b.click(function(){
+        	$aboutus.fadeIn();
+        	$home.fadeOut();
+        	$gallary.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $c.click(function(){
+        	$gallary.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $d.click(function(){
+        	$contactus.fadeIn();
+        	$home.fadeOut();
+        	$aboutus.fadeOut();
+        	$gallary.fadeOut();
+        });
+
+	});
+</script>
+</body>
+</html>	
